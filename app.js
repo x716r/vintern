@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var upload = require('./routes/upload');
 
 var app = express();
 
@@ -22,12 +23,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Access PureCSS via a staitc route
-app.use(express.static(path.join(__dirname, 'node_modules/purecss/build/')));
-
-
 app.use('/', index);
 app.use('/users', users);
+app.use('/upload', upload);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
