@@ -1,8 +1,30 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif
 }
 
 a {
   color: #00B7FF;
+}
+
+@font-face {
+    font-family: 'Lobster', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+
+div{
+    font-family: 'Lobster', cursive;
+}
+th{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 500%;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
