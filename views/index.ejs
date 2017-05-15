@@ -2,10 +2,29 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/pure-min.css">
+    <link rel="stylesheet" href="/stylesheets/grids-min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+  <div class="header">
+    <h1 id="title"><%= title %></h1>
+  </div>
+
+  <div class="pure-g container">
+
+      <% for(var i=0; i < 10 ; i++) {%>
+      <div class="pure-u-1">
+        <h2><%= i %></h2>
+      </div>
+      <% } %>
+
+  </div>
+
+  <div class="pure-g footer">
+
+  </div>
+
   </body>
 </html>

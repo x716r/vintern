@@ -1,8 +1,33 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: lightgrey;
 }
 
 a {
   color: #00B7FF;
+}
+
+.header {
+  padding: 1em;
+  background: black;
+  height: 3em;
+  color: aliceblue;
+}
+
+.header span {
+  margin: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.container {
+  margin: 1em auto;
+  width: 960px;
+  background: lightblue;
+
+}
+
+.footer {
+
 }
