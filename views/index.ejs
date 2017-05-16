@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/pure-min.css">
     <link rel="stylesheet" href="/stylesheets/grids-min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -9,14 +10,25 @@
   <body>
 
   <div class="header">
-    <h1 id="title"><%= title %></h1>
+    <h1 id="title" class="lobster-font"><%= title %></h1>
   </div>
 
-  <div class="pure-g container">
+  <div class="pure-g">
 
       <% for(var i=0; i < 10 ; i++) {%>
-      <div class="pure-u-1">
-        <h2><%= i %></h2>
+
+      <div class="pure-u-1 album">
+
+        <div class="card">
+
+          <img src="https://www.w3schools.com/html/pic_mountain.jpg" class="photo">
+          <div class="caption raleway-font">
+            <span class="caption-text">Caption goes here! qln efln ln qlnw lwnk lwnk lwkng lwknrg lwkngw 4lkgn</span>
+            <p><span class="caption-date">May 16, 2017</span></p>
+          </div>
+
+        </div>
+
       </div>
       <% } %>
 
